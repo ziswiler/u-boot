@@ -68,6 +68,10 @@
 	u-boot,dm-spl;
 };
 
+&pinctrl_wdog {
+	u-boot,dm-spl;
+};
+
 &{/soc@0/bus@30800000/i2c@30a20000/pmic} {
 	u-boot,dm-spl;
 };
