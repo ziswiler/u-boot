@@ -84,6 +84,8 @@
 #include <config_distro_bootcmd.h>
 
 #define CONFIG_EXTRA_ENV_SETTINGS \
+	"dfu_alt_info=sf 0:0=u-boot-bin raw 0x210000 0x1d0000;" \
+			    "u-boot-env raw 0x3e0000 0x20000\0" \
 	"env_addr=0x203e0004\0" \
 	"envload=env import -d -b ${env_addr}\0" \
 	"install_rcw=source 20200000\0" \
