@@ -11,6 +11,7 @@
 
 #include <config_distro_bootcmd.h>
 #include <env/ti/mmc.h>
+#include <env/ti/k3_dfu.h>
 
 /* DDR Configuration */
 #define CFG_SYS_SDRAM_BASE1		0x880000000
