@@ -15,6 +15,8 @@
 #include <linux/compat.h>
 #include <linux/printk.h>
 
+#define memset_io memset
+
 /**
  * struct resource_table - firmware resource table header
  * @ver: version number

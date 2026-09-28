@@ -76,6 +76,16 @@ config REMOTEPROC_STM32_COPRO
 	  Say 'y' here to add support for STM32 Cortex-M4 coprocessors via the
 	  remoteproc framework.
 
+config REMOTEPROC_THEAD_AON
+	bool "Support for THEAD's AON"
+	select REMOTEPROC
+	depends on DM
+	depends on ARCH_THEAD
+	depends on OF_CONTROL
+	help
+	  Say 'y' here to add support for THEAD's AON via remoteproc
+	  framework.
+
 config REMOTEPROC_TI_K3_ARM64
 	bool "Support for TI's K3 based ARM64 remoteproc driver"
 	select REMOTEPROC

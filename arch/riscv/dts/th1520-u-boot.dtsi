@@ -13,6 +13,12 @@
 		reg-names = "phy-0", "phy-1", "ctrl", "sys";
 		bootph-pre-ram;
 	};
+
+	aon_rproc: rproc@fffff46000 {
+		compatible = "thead,th1520-aon-rproc";
+		reg = <0xff 0xfff46000 0x0 0x1000000>;
+		bootph-pre-ram;
+	};
 };
 
 &cpus {
